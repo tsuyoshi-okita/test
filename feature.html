@@ -1,0 +1,573 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>App Landing Template </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="manifest" href="site.webmanifest">
+	<!--
+	    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+-->
+		<!-- CSS here -->
+            <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+            <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+            <link rel="stylesheet" href="assets/css/flaticon.css">
+            <link rel="stylesheet" href="assets/css/slicknav.css">
+            <link rel="stylesheet" href="assets/css/animate.min.css">
+            <link rel="stylesheet" href="assets/css/magnific-popup.css">
+            <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+            <link rel="stylesheet" href="assets/css/themify-icons.css">
+            <link rel="stylesheet" href="assets/css/slick.css">
+            <link rel="stylesheet" href="assets/css/nice-select.css">
+            <link rel="stylesheet" href="assets/css/style.css">
+            <link rel="stylesheet" href="assets/css/responsive.css">
+   </head>
+
+   <body>
+       
+    <!-- Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+<!--		  
+                  <img src="assets/img/logo/logo.png" alt="">
+		  -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+       <div class="header-area header-transparrent ">
+            <div class="main-header sky-blue header-sticky">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div class="col-xl-2 col-lg-2 col-md-2">
+                            <div class="logo">
+                              <a href="index.html">
+				<!--		  <img src="assets/img/logo/logo.png" alt=""></a>-->
+		  <img src="assets/img/NLP2.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-10">
+                            <!-- Main-menu -->
+                            <div class="main-menu f-right d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">    
+                                        <li><a href="index.html"> ワークショップ</a></li>
+                                        <li  class="active"><a href="about.html">コンペ</a></li>
+<!--					
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="services.html">Pricing</a></li>
+                                        <li><a href="#">Pages</a>
+                                            <ul class="submenu">
+                                                <li><a href="blog.html">Blog</a></li>
+                                                <li><a href="single-blog.html">Blog Details</a></li>
+                                                <li><a href="elements.html">Element</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">Contact</a></li>
+-->					
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+        <!-- Header End -->
+    </header>
+
+    <main>
+                <div class="single-slider slider-height slider-padding black d-flex align-items-center">                    <div class="container">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-lg-22 col-md-12 ">
+                                <div class="hero__caption">
+  
+<h3>コンペの概要</h1>				     
+  「大規模言語モデルのファインチューニング技術と評価」ワークショップ
+では、チューニングコンペティションを開催します。
+<a href="https://llm-jp.github.io/tuning-competition/">tuning competition</a>
+<br><br>
+安全性に強いLLMを意識したチューニングコンペティションという一面にもフォーカスを当てます。ワークショップ当日に上位チームの出力について、安全性の面からも人手評価で吟味を行う予定です。
+<br><br>
+チューニングコンペティションへのレジストレーションは以下のFORMからお願いします。
+
+<br><br>
+コンペティションは以下のような形で開催いたします。
+<br><br>
+ターゲットとするベースモデルは、llm-jp-3-13b （インストラクションチューニング済みモデルも可）に限定します。このモデル
+に対して、（１）下流タスクにおける評価を上げるような新しいチューニング技法(SFT, DPO, LoRA などのファインチューニング技術を発展させた形を含む)、（２）下流タスクにおける評価を上げるような新たなデータを構築してそれを既存のファインチューニング技法、（３）上記には該当しないが下流タスクの精度向上やアライメントを実現させる技術、を考案して適用する形のいずれかとします。その上で、下流タスクにおける評価点により、参加者のチームで競います。ターゲットとするベースモデル llm-jp-3-13bは、https://huggingface.co/llm-jp/llm-jp-3-13b,
+llm-jp/llm-jp-3-13b-instruct からアクセス可能です。
+<br><br>
+なお、llm-jp-3-13b-instructのSFTで用いているデータは日本語:Ichikara-004-001, AnswerCarefully-001, Dolly, OASST-1, OASST-2, 英語: Dolly, OASST-1, OASST-2です。
+<br><br>
+データセットの全体https://huggingface.co/llm-jp/llm-jp-13b-instruct-full-ac_001_16x-dolly-ichikara_004_001_single-oasst-oasst2-v2.0
+<br><br>
+評価方法は、AnswerCarefully ボーダーラインデータ、ichikara-instruction1 と同等のデータ（700件、300件をそれぞれ学習用、テスト用、安全性について何も言わない返答を返すモデルを良い点数としないための足きりとして用いる）のコンビネーションの形で行うことを予定しています。どのようにコンビネーションするかの詳細については、別途明示させていただきます。同時に、dockerを用いた提出方法において、明示して、参加チーム内でも測定できる形とします。リーダーボードでは、これを用いた表示で自動的に順位づけを行います。
+<br><br>
+ワークショップ当日に１時間時間を取り、参加者全員で、上位３チーム（参加チームが多い場合には５チーム）の出力を評価する形で、人手評価を加える予定です。ワークショップ当日には、上位３チームに入らないチームの方も、このような形で評価を行うことに賛同して人手評価に加わっていただけましたらと考えております。同時に、安全性の評価に詳しい者がパネリストとして、結果の吟味を行う時間も作ろうと考えております。
+<br><br>
+</p>
+
+  
+				    </p>
+                                    <!-- Slider btn -->
+<!--				    
+                                   <div class="slider-btns">
+                                        <a data-animation="fadeInLeft" data-delay="1.0s" href="industries.html" class="btn radius-btn">Download</a>
+                                        <a data-animation="fadeInRight" data-delay="1.0s" class="popup-video video-btn ani-btn" href="https://www.youtube.com/watch?v=1aP-TXUpNoU"><i class="fas fa-play"></i></a>
+-->
+                                   </div>
+                                </div>
+</div>
+<!--                            <div class="col-lg-6">
+                            <div class="col-lg-15">  
+			      -->
+			      <!--
+                            <div class="col-lg-9">  
+                                <div class="NLP d-none d-lg-block f-right" data-animation="fadeInRight" data-delay="1s">-->
+<!--
+                                    <img src="assets/img/hero/hero_right.png" alt="">
+				    -->
+			      <!--				    
+                                    <img src="assets/img/NLP2.jpg" alt="">				    
+                                </div>
+                            </div>
+-->			    
+                        </div>
+                    </div>
+</div>
+                <div class="single-slider slider-height slider-padding sky-blue d-flex align-items-center">		  
+                    <div class="container">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-lg-22 col-md-12 ">
+                                <div class="hero__caption">
+                                    <h3 data-animation="fadeInUp" data-delay=".6s">
+				     コンペの概要</h1>
+<p data-animation="fadeInUp" data-delay=".8s">
+チューニングに用いるデータとしては、llm-jp-evalのデータは含まれてはならず、しかし、ichikara、MT-Benchなどのデータは使っても良いという形にしたいと思います。llm-jp-evalのデータを用いている場合には、チーティングと見なし、失格とさせていただきます。
+<br><br>
+チューニングでは、（1）下流タスクにおいてより精度の高い学習を行えるようにする目的と、（2）LLMの振る舞いを制御したい形の目的の２つが存在します。後者は、大規模なデータにおいては、訓練やチューニングでデータを用いたからといって、LLMがそのデータの特性を織り込んだ形で取り込まれるかわからないことに対するものです。このため、ichikaraや 安全性のデータを用いたチューニングでは、LLMで用いられるべき表現をチューニングで取り込む、あるいは、LLMで用いられるべきではない表現をチューニングで排除したい目的で、チューニングで行い、同じデータを用いて評価しています。評価指標はいずれをも考慮していますのでご確認ください。
+<br><br>
+
+				  <h3> GPUに関して</h3>
+<p data-animation="fadeInUp" data-delay=".8s">				  
+計算リソースは、我々事務局の資源の制約から、最大限、mdx 1インスタンス（GPU4枚）を上限とする形でリクエストに応じて配分させていただきます。チューニングコンペのレジストレーションにおいて、希望するGPU数としてリクエストしていただけましたらと思います。資源は限られているためにどれだけのGPUを使っていただくかの決定は、申し訳ありませんが、事務局の決定にしたがっていただく形となります。自前のGPUを利用する形の方は、リクエストするGPU数をゼロとして、使っていただかない形で問題はありません。自前のGPUの場合、使っていただくGPUの数に制限はありませんが、システムの記述をしていただく際に明示していただくようにお願いいたします。なお、参加チームのリクエストの数によっては、期間全体としてではなく、日毎の細かいローテーションを行う可能性もありますので、その場合には、事務局の指示に従っていただけましたらありがたいです。
+<br><br>
+
+				    </p>
+                                    <!-- Slider btn -->
+<!--				    
+                                   <div class="slider-btns">
+                                        <a data-animation="fadeInLeft" data-delay="1.0s" href="industries.html" class="btn radius-btn">Download</a>
+                                        <a data-animation="fadeInRight" data-delay="1.0s" class="popup-video video-btn ani-btn" href="https://www.youtube.com/watch?v=1aP-TXUpNoU"><i class="fas fa-play"></i></a>
+-->
+                                   </div>
+                                </div>
+</div>
+                                   </div>
+                                </div>
+</div>
+
+                <div class="single-slider slider-height slider-padding brand-bg d-flex align-items-center">		  
+                    <div class="container">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-lg-22 col-md-12 ">
+                                <div class="hero__caption">
+				  <h3>ワークショップでの結果発表</h3>
+<p data-animation="fadeInUp" data-delay=".8s">				  				  
+3月14日にNLP2025併設のワークショップを開催します。この場で、チーム毎に代表者１人は結果発表（発表は遠隔でも可とする予定です）をしてください。これは義務としてお願いします。なお、参加チームの数が発表枠以上になった場合には、事務局でセレクションをさせていただく可能性があることはご承知おきください。
+<br><br>
+この結果発表では、詳細なチューニングの機構、データなどをプレゼンしていただけますようにお願いいたします。
+<br><br>
+		
+				  <h3>提出の様式</h3>
+<p data-animation="fadeInUp" data-delay=".8s">				  				  				  
+コンペティションにおいては、dockerを用いた提出に限定させていただきます。dockerを用いた提出の詳細については、後の節をご覧ください。サーバーを用意しますので、こちらの方への提出をお願いいたします。公平な提出と、再現性のある形での提出という意味から、dockerでコードなども記述していただいた形での提出という形で行います。事務局の方では、この中身は以下の形で依頼がない限り、見ない形で自動的に処理される形となります。以下の形で、行いますので、ご留意いただけましたらと思います。この形により、チューニングのアイデアやコードに権利をもたれておられる参加者の参加を促進する形を考えております。ぜひ、ご参加をお考えいただけましたらありがたいです。最終的な提出も同様のサーバーを用いて行います。
+<br><br>
+投稿者本人の依頼または許可がない限り，Dockerイメージの内容（中身のコード）を運営は確認しない
+投稿者本人の依頼または許可がない限り，本コンペティションの精度評価以外に利用しない
+投稿者本人の依頼または許可がない限り，本評価システムから外部の記憶媒体にコピーしない
+投稿者本人の依頼または許可がない限り，本コンペティション終了後一定期間の後に全て削除する
+<br><br>
+
+                                   </div>
+                                </div>
+			</div>
+                                   </div>
+                                </div>
+</div>
+			
+                <div class="single-slider slider-height slider-padding sky-blue d-flex align-items-center">		  
+                    <div class="container">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-lg-22 col-md-12 ">
+                                <div class="hero__caption">
+
+<h3>開発されたコードやデータの提出に関して</h3>
+<p data-animation="fadeInUp" data-delay=".8s">				  				  				  
+GPU資源の提供を受けるチームは、最終版のコードをやそのアイデアを今後のllm-jpの活動に役立てるために、提供することに応じていただけましたらと考えております。llm-jpのチューニングツールの一部として、コードを公共で使えるようにする予定です。なお、コード開発において発生した開発者の権利を奪うことを意図はしておりません。必要な権利の手続きは、参加後に、参加者の負担で権利などを保持していただけましたらありがたいです。なお、その後に、llm-jpの活動にコードを寄贈していただける場合には、ありがたく使わせていただく形を考えています。また、そのような権利を主張せずにllm-jpにコードを提供していただける場合には、そのようにして使わせていただきます。
+<br><br>
+最終的なコードは出せないけれど（会社の権利などで出せないチームも含む）、参加はしてみても良いというチームもあるかと思います。最初からこの形がわかっている場合には、自前のGPU資源で行うことを基本に考えていただけましたらありがたいです。
+<br><br>
+提供して役立つコードにならない可能性の高いチーム（たとえば、参加時に、どのような手法を適用するかが決まっていないチーム）は、なるだけ自前のGPU資源を用意して参加していただけましたらありがたいです。
+<br><br>
+この分野に入ったばかりの学生や社会人の人のチームが、既存の手法を試してみるために、コンペティションに参加するのは良く行われることです。この形の参加は推奨したいと思います。ただし、この形の場合も、本拠とする大学や研究所で、できる限り、自前のGPUを確保していただけると非常に助かります。
+<br><br>
+<h3>ワンクリック的に使えるベースラインシステム</h3>
+コンペで配布する標準の開発データを使って動くgithab repository とインストールから実行までをやってくれるシェルスクリプトです。SFTやDPOなどの手順を整備しています。
+[構築中]
+<br><br>
+</p>
+
+                                   </div>
+                                </div>
+</div>
+
+
+
+<!--                            <div class="col-lg-6">
+                            <div class="col-lg-15">  
+  -->
+                            <div class="col-lg-9">  
+                                <div class="NLP d-none d-lg-block f-right" data-animation="fadeInRight" data-delay="1s">
+<!--
+                                    <img src="assets/img/hero/hero_right.png" alt="">
+                                    <img src="assets/img/NLP2.jpg" alt="">				
+                                    <img src="assets/img/NLP2.jpg" alt="">								    -->        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+<!--
+            </div>
+         </div>
+				    -->
+
+        <!-- 
+        <section class="best-features-area inner-padding">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-xl-8 col-lg-10">
+                        <div class="row">
+                            <div class="col-lg-10 col-md-10">
+                                <div class="section-tittle">
+                                    <h2>Some of the best features Of Our App!</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                <div class="single-features mb-70">
+                                    <div class="features-icon">
+                                        <span class="flaticon-support"></span>
+                                    </div>
+                                    <div class="features-caption">
+                                        <h3>Easy to Costomize</h3>
+                                        <p>Aorem psum olorsit amet ectetur adipiscing elit, sed dov.</p>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-xl-6 col-lg-6 col-md-6">
+                                <div class="single-features mb-70">
+                                    <div class="features-icon">
+                                        <span class="flaticon-support"></span>
+                                    </div>
+                                    <div class="features-caption">
+                                        <h3>Extreme Security</h3>
+                                        <p>Aorem psum olorsit amet ectetur adipiscing elit, sed dov.</p>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                <div class="single-features mb-70">
+                                    <div class="features-icon">
+                                        <span class="flaticon-support"></span>
+                                    </div>
+                                    <div class="features-caption">
+                                        <h3>Customer Support</h3>
+                                        <p>Aorem psum olorsit amet ectetur adipiscing elit, sed dov.</p>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-xl-6 col-lg-6 col-md-6">
+                                <div class="single-features mb-70">
+                                    <div class="features-icon">
+                                        <span class="flaticon-support"></span>
+                                    </div>
+                                    <div class="features-caption">
+                                        <h3>Creative Design</h3>
+                                        <p>Aorem psum olorsit amet ectetur adipiscing elit, sed dov.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="features-shpae features-shpae2 d-none d-lg-block">
+                <img src="assets/img/shape/best-features.png" alt="">
+            </div>
+        </section>
+-->	
+        <!-- Best Features End -->
+        <!-- 
+        <div class="our-customer pt-50 pb-100">
+            <div class="container-fluid">
+                <div class="our-customer-wrapper">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-xl-8">
+                            <div class="section-tittle text-center">
+                                <h2>What Our Customers<br> Have to Say</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="customar-active dot-style d-flex dot-style">
+                                <div class="single-customer mb-100">
+                                    <div class="what-img">
+                                        <img src="assets/img/shape/man1.png" alt="">
+                                    </div>
+                                    <div class="what-cap">
+                                        <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
+                                        <p>Utenim ad minim veniam quisnostrud exercitation ullamcolabor nisiut aliquip ex ea commodo consequat duis aute irure dolor in represse.</p>
+                                    </div>
+                                </div>
+                            
+                                <div class="single-customer mb-100">
+                                    <div class="what-img">
+                                        <img src="assets/img/shape/man2.png" alt="">
+                                    </div>
+                                    <div class="what-cap">
+                                        <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
+                                        <p>Utenim ad minim veniam quisnostrud exercitation ullamcolabor nisiut aliquip ex ea commodo consequat duis aute irure dolor in represse.</p>
+                                    </div>
+                                </div>
+                            
+                                <div class="single-customer mb-100">
+                                    <div class="what-img">
+                                        <img src="assets/img/shape/man3.png" alt="">
+                                    </div>
+                                    <div class="what-cap">
+                                        <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
+                                        <p>Utenim ad minim veniam quisnostrud exercitation ullamcolabor nisiut aliquip ex ea commodo consequat duis aute irure dolor in represse.</p>
+                                    </div>
+                                </div>
+                            
+                                <div class="single-customer mb-100">
+                                    <div class="what-img">
+                                        <img src="assets/img/shape/man2.png" alt="">
+                                    </div>
+                                    <div class="what-cap">
+                                        <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
+                                        <p>Utenim ad minim veniam quisnostrud exercitation ullamcolabor nisiut aliquip ex ea commodo consequat duis aute irure dolor in represse.</p>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>           
+-->
+        <!-- 
+        <div class="available-app-area">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="app-caption">
+                            <div class="section-tittle section-tittle3">
+                                <h2>Our App Available For Any Device Download now</h2>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore fug.</p>
+                                <div class="app-btn">
+                                    <a href="#" class="app-btn1"><img src="assets/img/shape/app_btn1.png" alt=""></a>
+                                    <a href="#" class="app-btn2"><img src="assets/img/shape/app_btn2.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="app-img">
+                            <img src="assets/img/shape/available-app.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="app-shape">
+                <img src="assets/img/shape/app-shape-top.png" alt="" class="app-shape-top heartbeat d-none d-lg-block">
+                <img src="assets/img/shape/app-shape-left.png" alt="" class="app-shape-left d-none d-xl-block">
+            </div>
+        </div>
+-->
+
+        <!-- 
+        <div class="say-something-aera pt-90 pb-90 fix">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="offset-xl-1 offset-lg-1 col-xl-5 col-lg-5">
+                        <div class="say-something-cap">
+                            <h2>Say Hello To The Collaboration Hub.</h2>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3">
+                        <div class="say-btn">
+                            <a href="#" class="btn radius-btn">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="say-shape">
+                <img src="assets/img/shape/say-shape-left.png" alt="" class="say-shape1 rotateme d-none d-xl-block">
+                <img src="assets/img/shape/say-shape-right.png" alt="" class="say-shape2 d-none d-lg-block">
+            </div>
+        </div>
+	-->
+        <!-- Say Something End -->
+     
+    </main>
+   <footer>
+       <!-- 
+      <div class="footer-main" data-background="assets/img/shape/footer_bg.png">
+        <div class="footer-area footer-padding">
+            <div class="container">
+                <div class="row  justify-content-between">
+                    <div class="col-lg-3 col-md-4 col-sm-8">
+                         <div class="single-footer-caption mb-30">
+                             <div class="footer-logo">
+                                 <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                             </div>
+                             <div class="footer-tittle">
+                                 <div class="footer-pera">
+                                     <p class="info1">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore.</p>
+                                </div>
+                             </div>
+                         </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Quick Links</h4>
+                                <ul>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Features</a></li>
+                                    <li><a href="#">Pricing</a></li>
+                                    <li><a href="#">Download</a></li>
+                                    <li><a href="#">Reviews</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-7">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Support</h4>
+                                <ul>
+                                    <li><a href="#">Report a bug</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                    <li><a href="#">Sitemap</a></li>
+                                    <li><a href="#">FAQs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-8">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Newsletter</h4>
+                                <div class="footer-pera footer-pera2">
+                                 <p>Heaven fruitful doesn't over lesser in days. Appear </p>
+				</div>
+
+				
+                             <div class="footer-form">
+                                 <div id="mc_embed_signup">
+                                     <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative mail_part" novalidate="true">
+                                         <input type="email" name="EMAIL" id="newsletter-form-email" placeholder=" Email Address " class="placeholder hide-on-focus" onfocus="this.placeholder = ''" onblur="this.placeholder = ' Email Address '">
+                                         <div class="form-icon">
+                                             <button type="submit" name="submit" id="newsletter-submit" class="email_icon newsletter-submit button-contactForm"><img src="assets/img/shape/form_icon.png" alt=""></button>
+                                         </div>
+                                         <div class="mt-10 info"></div>
+                                     </form>
+                                 </div>
+                             </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+-->		
+                <!-- Copy-Right -->
+                <div class="row align-items-center">
+                    <div class="col-xl-12 ">
+                        <div class="footer-copy-right">
+                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+			      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+       <!-- Footer End-->
+   </footer>
+   
+	<!-- JS here -->
+	
+		<!-- All JS Custom Plugins Link Here here -->
+        <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+		
+		<!-- Jquery, Popper, Bootstrap -->
+		<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="./assets/js/popper.min.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+	    <!-- Jquery Mobile Menu -->
+        <script src="./assets/js/jquery.slicknav.min.js"></script>
+
+		<!-- Jquery Slick , Owl-Carousel Plugins -->
+        <script src="./assets/js/owl.carousel.min.js"></script>
+        <script src="./assets/js/slick.min.js"></script>
+        <!-- Date Picker -->
+        <script src="./assets/js/gijgo.min.js"></script>
+		<!-- One Page, Animated-HeadLin -->
+        <script src="./assets/js/wow.min.js"></script>
+		<script src="./assets/js/animated.headline.js"></script>
+        <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+		<!-- Scrollup, nice-select, sticky -->
+        <script src="./assets/js/jquery.scrollUp.min.js"></script>
+        <script src="./assets/js/jquery.nice-select.min.js"></script>
+		<script src="./assets/js/jquery.sticky.js"></script>
+        
+        <!-- contact js -->
+        <script src="./assets/js/contact.js"></script>
+        <script src="./assets/js/jquery.form.js"></script>
+        <script src="./assets/js/jquery.validate.min.js"></script>
+        <script src="./assets/js/mail-script.js"></script>
+        <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+        
+		<!-- Jquery Plugins, main Jquery -->	
+        <script src="./assets/js/plugins.js"></script>
+        <script src="./assets/js/main.js"></script>
+        
+    </body>
+</html>
