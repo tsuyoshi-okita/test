@@ -1,2 +1,0 @@
-# tuning_competition
-
